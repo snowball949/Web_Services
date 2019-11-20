@@ -96,7 +96,28 @@
 
         var precip_today = document.getElementById("precip_today");
         console.log(precip_today);
-        var precip_source = data.currently.
+        var precip_source = data.currently.precipProbability * 100 + "%";
+        console.log(precip_source);
+        precip_today.innerHTML = precip_source;
+	
+	
+	var humidity_today = document.getElementById("humidity_today");
+        console.log(humidity_today);
+        var humidity_source = data.currently.humidity * 100 + "%";
+        console.log(humidity_source);
+        humidity_today.innerHTML = humidity_source;
+
+        var wind_today = document.getElementById("wind_today");
+        console.log(wind_today);
+        var wind_source = data.currently.windSpeed;
+        console.log(wind_source);
+        wind_today.innerHTML = wind_source;
+
+        var summary_today = document.getElementById("summary_today");
+        console.log(summary_today);
+        var summary_source = data.currently.summary;
+        console.log(summary_source);
+        summary_today.innerHTML = summary_source;
 
 
 
